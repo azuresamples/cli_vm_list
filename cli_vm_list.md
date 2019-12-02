@@ -102,7 +102,6 @@ $
 次に割り当て解除済みの VM 一覧を取得してみます。  
 ```
 $ az vm list -d --query "[?powerState=='VM deallocated'].{VMName:name, PrivateIP:privateIps, ResourceGroup:resourceGroup, PowerState:powerState}" -o table
-Unable to load extension 'resource-graph'. Use --debug for more information.
 VMName               PrivateIP                                   ResourceGroup               PowerState
 -------------------  ------------------------------------------  --------------------------  --------------
 ake-vit-singer-test  10.0.2.4                                    AKE-VIT-SINGER-TEST         VM deallocated
